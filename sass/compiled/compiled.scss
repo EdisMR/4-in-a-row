@@ -1,0 +1,11 @@
+@import "../style/colors";
+
+@media (prefers-color-scheme : dark){
+	@import "../style/colorsDark";
+}
+
+@import "../style/landscape";
+
+@media (max-width:700px){
+	@import "../style/portrait";
+}
