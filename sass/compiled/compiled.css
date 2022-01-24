@@ -1,0 +1,190 @@
+@charset "UTF-8";
+html {
+  background-color: #4a9cae;
+  color: #eee;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  min-height: 70vh;
+}
+
+.definirJugadores {
+  background-color: var(--materialSecondary);
+  color: var(--materialSecondaryColor);
+  padding: 20px;
+}
+
+.definirJugadores form div {
+  display: flex;
+  margin: 20px auto 20px auto;
+}
+
+.definirJugadores form div span {
+  white-space: nowrap;
+}
+
+.definirJugadores form div input {
+  width: 100%;
+}
+
+.resetearInputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resetearInputs button {
+  display: inline-block;
+  width: 49%;
+  height: 40px;
+}
+
+.d-none {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1px;
+  border-radius: 20px;
+}
+
+div[class^=column] {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  height: 80px;
+  width: 80px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4683b4c2;
+  will-change: contents;
+  transition-duration: 0.2s;
+}
+
+.divHover {
+  background-color: #4683b471 !important;
+}
+
+.user1 {
+  color: #c33 !important;
+}
+
+.user2 {
+  color: #e0e052 !important;
+}
+
+.innerTurnUser {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #4682b4;
+  border-radius: 10px;
+  min-width: 150px;
+  text-align: center;
+  color: #f0fff0;
+  will-change: contents;
+  font-size: 27px;
+}
+
+.innerTurnUserAnimation {
+  animation-name: turnUserChange;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes turnUserChange {
+  0% {
+    opacity: 0;
+    transform: rotateY(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+.buttonReset {
+  margin: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .grid-container {
+    width: calc(100vw - 10px);
+  }
+
+  .grid-container div {
+    height: 50px;
+    width: auto;
+  }
+}
+header {
+  text-align: left;
+  margin-bottom: 25px;
+}
+header h1 {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+header, footer {
+  padding: 20px;
+}
+
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at https://aka.ms/fabric-assets-license
+*/
+@font-face {
+  font-family: "FabricMDL2Icons";
+  src: url("../extras/fabric-icons-c1be8c1d.woff") format("woff");
+}
+.ms-Icon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: "FabricMDL2Icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.ms-Icon--AcceptMedium:before {
+  content: "";
+}
+
+.ms-Icon--CircleFill:before {
+  content: "";
+}
+
+.ms-Icon--DiamondUser:before {
+  content: "";
+}
+
+.ms-Icon--Reset:before {
+  content: "";
+}
+
+.ms-Icon--SearchNearby:before {
+  content: "";
+}
+
+/*# sourceMappingURL=compiled.css.map */

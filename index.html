@@ -9,6 +9,229 @@
 	<script src="script/script.js" defer></script>
 </head>
 <body>
-	
+	<header>
+		<h1>4 IN A ROW</h1>
+	</header>
+
+	<main>
+
+		<section class="definirJugadores">
+			<form>
+				<div>
+					<span>Player 1 (yellow): &nbsp;</span><input value="User 1" onclick="this.value='' " type="text" name="user1" minlength="1" maxlength="30" autocomplete="off" pattern="^([\w]{1,20}[\s]{0,1}){1,3}$" required="">
+				</div>
+				<div>
+					<span>Player 2 (red): &nbsp;</span><input value="User 2" onclick="this.value='' " type="text" name="user2" minlength="1" maxlength="30" autocomplete="off" pattern="^([\w]{1,20}[\s]{0,1}){1,3}$" required="">
+				</div>
+				<div class="resetearInputs">
+					<button type="reset" aria-label="Reset"><span class="ms-Icon ms-Icon--Reset"></span></button>
+					<button type="submit" aria-label="Submit"><span class="ms-Icon ms-Icon--AcceptMedium"></span></button>
+				</div>
+			</form>
+		</section>
+
+		
+		<section class="game-container d-none">
+
+			<section class="grid-container">
+
+				<div class="columna1" data-posx="0" data-posy="0">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna2" data-posx="1" data-posy="0">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna3" data-posx="2" data-posy="0">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna4" data-posx="3" data-posy="0">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna5" data-posx="4" data-posy="0">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna6" data-posx="5" data-posy="0">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna7" data-posx="6" data-posy="0">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+
+
+
+				<div class="columna1" data-posx="0" data-posy="1">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna2" data-posx="1" data-posy="1">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna3" data-posx="2" data-posy="1">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna4" data-posx="3" data-posy="1">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna5" data-posx="4" data-posy="1">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna6" data-posx="5" data-posy="1">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna7" data-posx="6" data-posy="1">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+
+				<div class="columna1" data-posx="0" data-posy="2">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna2" data-posx="1" data-posy="2">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna3" data-posx="2" data-posy="2">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna4" data-posx="3" data-posy="2">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna5" data-posx="4" data-posy="2">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna6" data-posx="5" data-posy="2">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna7" data-posx="6" data-posy="2">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+
+
+				<div class="columna1" data-posx="0" data-posy="3">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna2" data-posx="1" data-posy="3">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna3" data-posx="2" data-posy="3">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna4" data-posx="3" data-posy="3">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna5" data-posx="4" data-posy="3">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna6" data-posx="5" data-posy="3">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna7" data-posx="6" data-posy="3">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+
+
+				<div class="columna1" data-posx="0" data-posy="4">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna2" data-posx="1" data-posy="4">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna3" data-posx="2" data-posy="4">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna4" data-posx="3" data-posy="4">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna5" data-posx="4" data-posy="4">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna6" data-posx="5" data-posy="4">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna7" data-posx="6" data-posy="4">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+
+
+				<div class="columna1" data-posx="0" data-posy="5">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna2" data-posx="1" data-posy="5">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna3" data-posx="2" data-posy="5">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna4" data-posx="3" data-posy="5">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna5" data-posx="4" data-posy="5">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna6" data-posx="5" data-posy="5">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+				<div class="columna7" data-posx="6" data-posy="5">
+					<span class="ms-Icon" data-occupied="false"></span>
+				</div>
+
+
+			</section>
+		
+		</section>
+
+		<section class="innerTurnUser">
+			<div class="d-none userContainerText">  <span class="ms-Icon ms-Icon--SearchNearby"></span>&nbsp;&nbsp;<span id="userTurnText"></span></div>
+			<div class="d-none winnerContainerText"><span class="ms-Icon ms-Icon--DiamondUser"></span> ¡The winner is <span id="winnerTurnText"></span>!</div>
+		</section>
+
+		<section class="buttonReset d-none">
+			<div>
+				<button aria-label="Restart game">Restart game</button>
+			</div>
+		</section>
+
+
+	</main>
+
+	<footer>Created by <a href="https://github.com/EdisMR" target="_blank" rel="noopener noreferrer">@EdisMR</a></footer>
 </body>
 </html>
